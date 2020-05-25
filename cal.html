@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		my calculator
+	</title>
+	<link rel="stylesheet" type="text/css" href="cal.css">
+	<script type="text/javascript">
+		function summ(x,y)
+		{
+			
+      var total=x+y;
+          alert(total);
+		}
+		function subs(x,y){
+			var ans = x-y;
+			alert(ans);
+		}
+		function mult(x,y){
+			var ans = x*y;
+			alert(ans);
+		}
+
+	</script>
+</head>
+<body>
+	
+<h1>calculator</h1>
+<form id="page">
+no1:<input type="text" id="one" ></br>
+no2:<input type="text" id="two" ></br>
+
+<input type="button" id="sum" value="+" onclick="summ(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
+</br>
+<input type="button" id="sub" value="-" onclick="subs(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
+</br>
+<input type="button" id="mul" value="*" onclick="mult(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
+</br>
+</form>
+</body>
+</html>
