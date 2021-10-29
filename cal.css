@@ -13,3 +13,20 @@ h1{
 	border-width: 100px;
 	border-size :20px;
 }
+.square{
+	/*position: absolute;*/
+	border: 3px solid red;
+	border-radius: 5%;
+	text-align: center;
+	height: 300px;
+	margin: auto;
+	width: 50%;
+	
+	padding: 10px;
+}
+
+.click{
+	padding: 10px;
+	margin: 10px;
+	width: 190px;
+}
