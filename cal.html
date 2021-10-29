@@ -20,6 +20,10 @@
 			var ans = x*y;
 			alert(ans);
 		}
+		function modul(x,y){
+			var ans = x%y;
+			alert(ans);
+		}
 
 	</script>
 </head>
@@ -37,8 +41,10 @@
 		</br>
 		<input class="click" type="button" id="mul" value="*" onclick="mult(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
 		</br>
+<input type="button" id="mod" value="%" onclick="modul(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
 	</form>
 </div>
+
 
 </body>
 </html>
