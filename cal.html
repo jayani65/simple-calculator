@@ -26,16 +26,19 @@
 <body>
 	
 <h1>calculator</h1>
-<form id="page">
-no1:<input type="text" id="one" ></br>
-no2:<input type="text" id="two" ></br>
+<div class="square">
+	<form id="page">
+		<b>no1:</b><input class="click" type="text" id="one" ></br>
+		<b>no2:</b><input class="click" type="text" id="two" ></br>
+		
+		<input class="click" type="button" id="sum" value="+" onclick="summ(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
+		</br>
+		<input class="click" type="button" id="sub" value="-" onclick="subs(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
+		</br>
+		<input class="click" type="button" id="mul" value="*" onclick="mult(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
+		</br>
+	</form>
+</div>
 
-<input type="button" id="sum" value="+" onclick="summ(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
-</br>
-<input type="button" id="sub" value="-" onclick="subs(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
-</br>
-<input type="button" id="mul" value="*" onclick="mult(parseInt(document.getElementById('one').value),parseInt(document.getElementById('two').value))">
-</br>
-</form>
 </body>
 </html>
